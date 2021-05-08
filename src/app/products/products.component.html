@@ -6,9 +6,9 @@
             </div> 
         </div>        
         <div class="col-2 text-centre mt-5 mb-5" style="background-color: aquamarine;">
-            <button *ngIf="productCount==0" ><img src="..assets/undraw_empty_cart_co35.svg" alt=""></button>
-            <h5>number of products selected:{{productCount}}</h5>
-            <span *ngFor="let title of productsSentByChild">{{title}},</span>
+            <img src="https://i.pinimg.com/originals/2e/ac/fa/2eacfa305d7715bdcd86bb4956209038.png" *ngIf="productCount==0" style=" margin:auto;display: block;width: 100%;border-radius: 50%;margin-top: 300px;" alt="Responsive image">
+            <h5 *ngIf="productCount!=0">number of products selected:{{productCount}}</h5>
+            <li *ngFor="let title of productsSentByChild">{{title}},</li>
         </div>
     </div>
 

@@ -5,11 +5,12 @@
         </div> 
     </div>        
     <div class="col-2 text-centre mt-5 mb-5" style="background-color: #fff1e6">
+        <h4 style="text-align: center;color: #da627d;font-weight: bold">Cart</h4>
         <img src="assets\undraw_empty_cart_co35 (1).svg" *ngIf="productCount==0" style=" margin:auto;display: block;width: 100%;margin-top: 300px;" alt="">
         <h5 *ngIf="productCount==0" style="text-align: center;">cart is empty :(</h5>
-        <!-- <img src="https://www.apnashopping.in/assets/img/payment/Empty-Cart.jpg" alt="Empty-Cart" style=" margin:auto;display: block;width: 100%;margin-top: 300px;" data-pagespeed-url-hash="3778803924"> -->
-        <h5  *ngIf="productCount!=0">Number of products added to cart:{{productCount}}</h5>
-        <li *ngFor="let title of productsSentByChild" style="font-weight: bold;">{{title}},</li>
+        <!-- <img src="https://www.apnashopping.in/assets/img/payment/Empty-Cart.jpg" alt="Empty-Cart" style=" margin:auto;display: block;width: 100%;margin-top: 300px;" > -->
+        <h5  *ngIf="productCount!=0" style="color: #004e64;">Number of products added to cart:{{productCount}}</h5>
+        <li *ngFor="let title of productsSentByChild" style="font-weight: bolder;color: #004e64;">{{title}},</li>
     </div>
 </div>
 

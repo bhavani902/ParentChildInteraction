@@ -56,7 +56,9 @@ export class ProductsComponent implements OnInit {
         productTitle:"Nissan Kicks",
         description:"1330-1498cc engine,fuel type is petrol,Mileage:22.0kmpl, Dimensions(L*W*H):3,731*1,579*1,490mm",
         productImg:"https://stimg.cardekho.com/images/carexteriorimages/630x420/Nissan/Kicks/7828/1593410136460/front-left-side-47.jpg"
-      }
+      },
+      
+
   ]
   productCount:number=0
   productsSentByChild=[];

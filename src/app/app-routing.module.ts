@@ -11,7 +11,8 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
   {path:'contactus',component:ContactusComponent},
-  {path:'products',component:ProductsComponent}
+  {path:'products',component:ProductsComponent},
+  {path:'', redirectTo:'/login',pathMatch:'full'}
 
 ];
 

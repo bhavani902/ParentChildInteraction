@@ -1,0 +1,15 @@
+.hk{
+    background-image: url("https://images.unsplash.com/photo-1471479917193-f00955256257?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1748&q=80");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode:overlay;
+    background-color: rgb(0, 0,0,0.35);
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 500px;
+  }
+  .hk::before{
+      background-color: rgba(0,0,0,0.50);
+  }

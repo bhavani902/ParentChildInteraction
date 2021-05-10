@@ -1,20 +1,21 @@
-<h1 class=" text-center mt-5" style="color: #80b918;font-weight: bold;">Latest Products</h1>
-<div class="row">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5 mb-5 col-10" style="background-color: #da627d;">
-        <div class="col" *ngFor="let p of products">
-            <app-product-details [productObj]=p (myEvent)="getProductDetailsFromChild($event)"></app-product-details>
-        </div> 
-    </div>        
-    <div class="col-2 text-centre mt-5 mb-5" style="background-color: #fff1e6">
-        <h4 style="text-align: center;color: #da627d;font-weight: bold">Cart</h4>
-        <img src="assets\undraw_empty_cart_co35 (1).svg" *ngIf="productCount==0" style=" margin:auto;display: block;width: 100%;margin-top: 300px;" alt="">
-        <h5 *ngIf="productCount==0" style="text-align: center;">cart is empty :(</h5>
-        <!-- <img src="https://www.apnashopping.in/assets/img/payment/Empty-Cart.jpg" alt="Empty-Cart" style=" margin:auto;display: block;width: 100%;margin-top: 300px;" > -->
-        <h5  *ngIf="productCount!=0" style="color: #004e64;">Number of products added to cart:{{productCount}}</h5>
-        <li *ngFor="let title of productsSentByChild" style="font-weight: bolder;color: #004e64;">{{title}},</li>
+<div class="container">
+    <h1 class="text-center mt-5" style="color: #80b918;font-weight: bold;">Latest Products</h1>
+    <div class="row">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5 mb-5 col-10" style="background-color: #da627d;">
+            <div class="col" *ngFor="let p of products">
+                <app-product-details [productObj]=p (myEvent)="getProductDetailsFromChild($event)"></app-product-details>
+            </div> 
+        </div>        
+        <div class="col-2 text-centre mt-5 mb-5" style="background-color: #fff1e6">
+            <h4 style="text-align: center;color: #da627d;font-weight: bold">Cart</h4>
+            <img src="assets\undraw_empty_cart_co35 (1).svg" *ngIf="productCount==0" style=" margin:auto;display: block;width: 100%;margin-top: 300px;" alt="">
+            <h5 *ngIf="productCount==0" style="text-align: center;">cart is empty :(</h5>
+            <!-- <img src="https://www.apnashopping.in/assets/img/payment/Empty-Cart.jpg" alt="Empty-Cart" style=" margin:auto;display: block;width: 100%;margin-top: 300px;" > -->
+            <h5  *ngIf="productCount!=0" style="color: #004e64;">Number of products added to cart:{{productCount}}</h5>
+            <li *ngFor="let title of productsSentByChild" style="font-weight: bolder;color: #004e64;">{{title}},</li>
+        </div>
     </div>
 </div>
-
 
 
 
